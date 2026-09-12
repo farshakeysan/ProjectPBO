@@ -10,12 +10,12 @@ package com.mycompany.jasarentalsepeda;
  */
 public class Rental {
 
-    String idRental;
-    String namaPelanggan;
-    String jenisSepeda;
-    int hargaSewa;
-    int lamaSewa;
-    String satuanSewa;
+    private String idRental;
+    private String namaPelanggan;
+    private String jenisSepeda;
+    private int hargaSewa;
+    private int lamaSewa;
+    private String satuanSewa;
 
     public Rental(String idRental, String namaPelanggan, String jenisSepeda, int hargaSewa, int lamaSewa, String satuanSewa) {
         this.idRental = idRental;
@@ -23,6 +23,54 @@ public class Rental {
         this.jenisSepeda = jenisSepeda;
         this.hargaSewa = hargaSewa;
         this.lamaSewa = lamaSewa;
+        this.satuanSewa = satuanSewa;
+    }
+
+    public String getIdRental() {
+        return idRental;
+    }
+
+    public void setIdRental(String idRental) {
+        this.idRental = idRental;
+    }
+
+    public String getNamaPelanggan() {
+        return namaPelanggan;
+    }
+
+    public void setNamaPelanggan(String namaPelanggan) {
+        this.namaPelanggan = namaPelanggan;
+    }
+
+    public String getJenisSepeda() {
+        return jenisSepeda;
+    }
+
+    public void setJenisSepeda(String jenisSepeda) {
+        this.jenisSepeda = jenisSepeda;
+    }
+
+    public int getHargaSewa() {
+        return hargaSewa;
+    }
+
+    public void setHargaSewa(int hargaSewa) {
+        this.hargaSewa = hargaSewa;
+    }
+
+    public int getLamaSewa() {
+        return lamaSewa;
+    }
+
+    public void setLamaSewa(int lamaSewa) {
+        this.lamaSewa = lamaSewa;
+    }
+
+    public String getSatuanSewa() {
+        return satuanSewa;
+    }
+
+    public void setSatuanSewa(String satuanSewa) {
         this.satuanSewa = satuanSewa;
     }
 
