@@ -65,6 +65,36 @@ public class JasaRentalSepeda {
 
         rental1.tampilkanData();
 
+        System.out.println();
+        System.out.println("=== DATA DARI GETTER ===");
+        System.out.println("ID Rental      : " + rental1.getIdRental());
+        System.out.println("Nama Pelanggan : " + rental1.getNamaPelanggan());
+        System.out.println("Jenis Sepeda   : " + rental1.getJenisSepeda());
+        System.out.println("Harga Sewa     : Rp" + rental1.getHargaSewa());
+        System.out.println("Lama Sewa      : " + rental1.getLamaSewa());
+        System.out.println("Satuan Sewa    : " + rental1.getSatuanSewa());
+
+        System.out.println();
+        System.out.println("=== SIMULASI SETTER ===");
+
+        System.out.println("Mengubah nama pelanggan...");
+        rental1.setNamaPelanggan("Farsha Keysan Aryadi");
+        System.out.println("Nama baru      : " + rental1.getNamaPelanggan());
+
+        System.out.println();
+        System.out.println("Mengubah lama sewa menjadi 3...");
+        rental1.setLamaSewa(3);
+        System.out.println("Lama sewa baru : " + rental1.getLamaSewa());
+
+        System.out.println();
+        System.out.println("Mengubah lama sewa menjadi 0...");
+        rental1.setLamaSewa(0);
+        System.out.println("Lama sewa saat ini : " + rental1.getLamaSewa());
+
+        System.out.println();
+        System.out.println("=== DATA SETELAH PERUBAHAN ===");
+        rental1.tampilkanData();
+
         input.close();
     }
 }

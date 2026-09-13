@@ -63,7 +63,11 @@ public class Rental {
     }
 
     public void setLamaSewa(int lamaSewa) {
-        this.lamaSewa = lamaSewa;
+        if (lamaSewa > 0) {
+            this.lamaSewa = lamaSewa;
+        } else {
+            System.out.println("Lama sewa harus lebih dari 0!");
+        }
     }
 
     public String getSatuanSewa() {
