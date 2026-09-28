@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.jasarentalsepeda;
 
-/**
- *
- * @author acer
- */
 public class Rental {
 
     private String idRental;
@@ -17,7 +9,8 @@ public class Rental {
     private int lamaSewa;
     private String satuanSewa;
 
-    public Rental(String idRental, String namaPelanggan, String jenisSepeda, int hargaSewa, int lamaSewa, String satuanSewa) {
+    public Rental(String idRental, String namaPelanggan, String jenisSepeda,
+                  int hargaSewa, int lamaSewa, String satuanSewa) {
         this.idRental = idRental;
         this.namaPelanggan = namaPelanggan;
         this.jenisSepeda = jenisSepeda;
