@@ -11,7 +11,9 @@ public class JasaRentalSepeda extends Rental {
                             int lamaSewa, String satuanSewa,
                             String jenisRem) {
 
-        super(idRental, namaPelanggan, jenisSepeda, hargaSewa, lamaSewa, satuanSewa);
+        super(idRental, namaPelanggan, jenisSepeda,
+              hargaSewa, lamaSewa, satuanSewa);
+
         this.jenisRem = jenisRem;
     }
 
@@ -87,6 +89,21 @@ public class JasaRentalSepeda extends Rental {
         );
 
         rental1.tampilkanData();
+
+        System.out.println();
+        System.out.println("=== POLYMORPHISM ===");
+
+        Rental rentalPolymorphism = new JasaRentalSepeda(
+                idRental,
+                namaPelanggan,
+                jenisSepeda,
+                hargaSewa,
+                lamaSewa,
+                satuanSewa,
+                jenisRem
+        );
+
+        rentalPolymorphism.tampilkanData();
 
         System.out.println();
         System.out.println("=== DATA DARI GETTER ===");

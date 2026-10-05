@@ -1,6 +1,6 @@
 package com.mycompany.jasarentalsepeda;
 
-public class Rental {
+public abstract class Rental {
 
     private String idRental;
     private String namaPelanggan;
@@ -75,14 +75,5 @@ public class Rental {
         return hargaSewa * lamaSewa;
     }
 
-    public void tampilkanData() {
-        System.out.println();
-        System.out.println("=== DATA RENTAL ===");
-        System.out.println("ID Rental      : " + idRental);
-        System.out.println("Nama Pelanggan : " + namaPelanggan);
-        System.out.println("Jenis Sepeda   : " + jenisSepeda);
-        System.out.println("Harga Sewa     : Rp" + hargaSewa + "/" + satuanSewa);
-        System.out.println("Lama Sewa      : " + lamaSewa + " " + satuanSewa);
-        System.out.println("Total Biaya    : Rp" + hitungTotal());
-    }
+    public abstract void tampilkanData();
 }
